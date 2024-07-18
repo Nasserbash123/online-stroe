@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assest/css/bootstrap@5.0.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assest/fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+  <link rel="stylesheet" href="/assest/fontawesome-free-6.4.0-web/css/solid.min.css">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Water+Brush&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./assest/css/style.css">
+  <title>Nasser Store - Shop</title>
+</head>
+
+<body>
+  <div id="page-loader">
+    <div id="loader">  
+      <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40"   />
+      </svg> 
+    </div>
+  </div>
+    <!-- main-menu -->
+    <nav class="navbar   navbar-expand d-none d-md-block ">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand px-4" href="index.html"><img src="./assest/image/logo-dark.png" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 m-2 mb-lg-0 p-3   ">
+            <li class="nav-item  ">
+              <a class="nav-link " aria-current="page" href="store.html">Store</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " aria-current="page" href="suits.html">Suits</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " aria-current="page" href="shirts.html">Shirts</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " aria-current="page" href="shoes.html">shoes</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " aria-current="page" href="singlepage.html">Product</a>
+            </li>
+            
+           
+           
+          </ul>
+  
+          <ul class="navbar-nav ms-auto mb-2 m-2 mb-lg-0 p-3   d-none d-md-flex ">
+            <li class="nav-item  "id="cart">
+              <a class="nav-link " aria-current="page" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+             
+              <div class="cart-view d-none d-lg-block">
+                  
+                  <div id="cart-view-content"></div>
+          
+            <!-- <div class="control-btn d-flex p-3">
+              <a href="checkout.html"><button class="btn button  mx-2 Checkout">  Checkout</button></a>
+              <a href="cart.html"><button class="btn button  mx-2 View">  View Cart</button></a>
+            </div> -->
+            </div>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " aria-current="page" href="wishlist.html"><i class="fa fa-heart"></i></a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " aria-current="page" href="login.html"><i class="fa fa-user"></i></a>
+            </li>
+            <form class="form-inline mx-1 my-1 d-none d-lg-block">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- end main-menu -->
+  
+  <!--  mobile-menu -->
+  
+  <nav class="navbar navbar-expand d-block d-md-none mobile-menu">
+    <div class="container ">
+      <button class="mobile-menu-btn-toggle m-1" id="mobile-menu-btn-toggle"><i class="fa fa-bars"></i></button>
+      <a class="navbar-brand px-1 mx-2" href="index.html"><img src="./assest/image/logo-dark.png" alt=""></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ms-auto my-auto  ">
+          <li class="nav-item  pe-1">
+            <a class=" mx-0 " aria-current="page" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+          <li class="nav-item pe-1 ">
+            <a class=" mx-0 " aria-current="page" href="wishlist.html"><i class="fa fa-heart"></i></a>
+          </li>
+          <li class="nav-item  pe-1">
+            <a class=" " aria-current="page" href="login.html"><i class="fa fa-user"></i></a>
+          </li>
+        </ul> 
+        </nav>
+  <!-- end mobile-menu -->
+
+  <!--  mobile-sidebar -->
+  <div class="moblie-toggle-sidebar  " id="moblie-toggle-sidebar">
+    <div class="container">
+      <a class="navbar-brand px-4 m-2 " href="index.html"><img src="./assest/image/logo-dark.png" alt=""></a>
+      <button class="mobile-menu-btn-close m-1" id="mobile-menu-btn-close"><i class="fa fa-close"></i></button>
+      <form class="form-inline m-3">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <ul class="navbar-nav me-auto mb-2 m-2 mb-lg-0 p-3   ">
+        <li class="nav-item  ">
+          <a class="nav-link " aria-current="page" href="store.html">Store</a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link " aria-current="page" href="suits.html">Suits</a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link " aria-current="page" href="shirts.html">Shirts</a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link " aria-current="page" href="shoes.html">Shoes</a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link " aria-current="page" href="singlepage.html">Product</a>
+        </li>
+        <span class="d-flex ">
+          <li class="nav-item  "id="cart">
+            <a class="nav-link " aria-current="page" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+          <li class="nav-item  mx-1">
+            <a class="nav-link " aria-current="page" href="wishlist.html"><i class="fa fa-heart"></i></a>
+          </li>
+          <li class="nav-item  mx-1">
+            <a class="nav-link " aria-current="page" href="login.html"><i class="fa fa-user"></i></a>
+          </li>
+        </span>
+      </ul>
+    </div>
+  </div>
+<!--  end mobile-sidebar -->
+<div class="page-title ">
+ 
+  <h3>Shop</h3>
+</div>
+<!-- content -->
+<div class="d-lg-flex ">
+  <div class="sidebar d-none d-lg-block py-5  px-1">
+    <div class="container-fluid py-3">  
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Colors
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <div class="p-2 colors-circle">
+                <span class="colors" id="red"></span>
+                <span class="colors" id="blue"></span>
+                <span class="colors" id="orange"></span>
+                <span class="colors" id="blue"></span>
+                <span class="colors" id="black"></span>
+                <span class="colors" id="green"></span>
+                <span class="colors" id="grey"></span>
+                <span class="colors" id="brown"></span>
+                <span class="colors" id="yellow"></span>
+                <span class="colors" id="darkblue"></span>
+                <span class="colors" id="purple"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-header bg-danger" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Category
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <ul>
+                <li >
+                  <span class="d-flex justify-content-between">
+                    <span><strong>Shirts</strong></span>
+                    <span>(15)</span>
+                  </span>
+                  </li>
+                  <li >
+                    <span class="d-flex justify-content-between">
+                      <span><strong>Suits</strong></span>
+                      <span>(25)</span>
+                    </span>
+                    </li>
+                    <li >
+                      <span class="d-flex justify-content-between">
+                        <span><strong>Shoes</strong></span>
+                        <span>(22)</span>
+                      </span>
+                      </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Price
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <div class="">
+                <div class="wrapper">
+                  <div class="price-input d-flex">
+                    <div class="field ">
+                      <span>Min</span>
+                      <input type="number" class="input-min" value="2500">
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field ">
+                      <span>Max</span>
+                      <input type="number" class="input-max" value="7500">
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
+  </div>
+
+  <div class="mobile-filter d-block d-lg-none">
+    <span class=" p-2 "><i class="fa fa-close close"></i></span> 
+    <div class="container-fluid py-3"> 
+     
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Colors
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <div class="p-2 colors-circle">
+                <span class="colors" id="red"></span>
+                <span class="colors" id="blue"></span>
+                <span class="colors" id="orange"></span>
+                <span class="colors" id="blue"></span>
+                <span class="colors" id="black"></span>
+                <span class="colors" id="green"></span>
+                <span class="colors" id="grey"></span>
+                <span class="colors" id="brown"></span>
+                <span class="colors" id="yellow"></span>
+                <span class="colors" id="darkblue"></span>
+                <span class="colors" id="purple"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-header bg-danger" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Category
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <ul>
+                <li >
+                  <span class="d-flex justify-content-between">
+                    <span><strong>Shirts</strong></span>
+                    <span>(15)</span>
+                  </span>
+                  </li>
+                  <li >
+                    <span class="d-flex justify-content-between">
+                      <span><strong>Suits</strong></span>
+                      <span>(25)</span>
+                    </span>
+                    </li>
+                    <li >
+                      <span class="d-flex justify-content-between">
+                        <span><strong>Shoes</strong></span>
+                        <span>(22)</span>
+                      </span>
+                      </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Price
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <div class="">
+                <div class="wrapper">
+                  <div class="price-input d-flex">
+                    <div class="field ">
+                      <span>Min</span>
+                      <input type="number" class="input-min" value="2500">
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field ">
+                      <span>Max</span>
+                      <input type="number" class="input-max" value="7500">
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
+  </div>
+<!-- Products card content -->
+<div class="content  my-3">
+  <div class="container-fluid ">
+<div class="px-sm-0 ">
+<div class="sort-by p-2  d-flex  justify-content-between ">
+<div class="d-flex">
+  
+  <select class="form-select form-select-sm my-1 mx-1 rounded-0 sort" aria-label=".form-select-sm example">
+    <option selected>Open this select menu</option>
+    <option value="By-Name">By Name </option>
+    <option value="By-Price-l-to-h">By Price, low to high</option>
+    <option value="By-Price-h-to-l">By Price, high to low</option>
+  </select>
+</div>
+<span class="d-block d-lg-none"><i  class="fa fa-filter filter me-2 mt-1 button p-2"></i></span>
+<span class="display-icon my-1  d-lg-flex d-none">
+  <span class="disply-style d-flex gird active  me-1 p-1">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+  <span class="disply-style d-flex three-gird me-1 p-1">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+  <span class="disply-style d-flex two-gird me-1 p-1">
+    <span></span>
+    <span></span>
+  </span>
+  <i class="disply-style fa fa-list list"></i>
+</span>
+</div>
+<div id="alert" class="my-3">
+  Product added to cart
+</div>
+<div id="alert-wislist" class="my-3">
+  Product added to wislist
+</div>
+
+</div>
+
+  <div class="product-items  ">      
+    <div class="container my-5  ">
+      <div class="row  products  ">
+        <div class=" col-lg-3 col-md-4  col-sm-6  card  " >
+          <img class="card-img main-image" src="./assest/image/shirts1/shirts1.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/shirts1/shirts1.png" alt="Card image cap">
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title"> White Shirt </p>
+            <p class="card-price  ">80$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="1"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="1" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img " src="./assest/image/shirts1/shirts1.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">White Shirt</h4>
+                <h5 class="product-price  ">80$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+      
+        <div class=" col-lg-3 col-md-4   col-sm-6  card  " >
+          <img class="card-img main-image" src="./assest/image/shirts1/shirts2.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/shirts1/shirts2.png" alt="Card image cap">
+         
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title"> White Smoke Shirt </p>
+            <p class="card-price  ">65$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="2"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="2" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img " src="./assest/image/shirts1/shirts2.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">White Smoke Shirt</h4>
+                <h5 class="product-price  ">70$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+
+        <div class=" col-lg-3 col-md-4   col-sm-6  card  " >
+          <img class="card-img main-image" src="./assest/image/shoes1/shoes2.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/shoes1/shoes2.png " alt="Card image cap">
+         
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title"> Dark Brown Shose </p>
+            <p class="card-price  ">165$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="3"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="3" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img " src="./assest/image/shoes1/shoes2.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">Dark Brown Shose</h4>
+                <h5 class="product-price  ">165$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+
+        <div class=" col-lg-3 col-md-4   col-sm-6  card  " >
+          <img class="card-img main-image" src="./assest/image/suits/product7/tinified7/71.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/suits/product7/tinified7/72.png" alt="Card image cap">
+         
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title"> Dark Grey Suit </p>
+            <p class="card-price  ">395$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="4"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="4" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img " src="./assest/image/suits/product7/tinified7/71.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">Dark Grey Suit</h4>
+                <h5 class="product-price  ">395$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+
+        <div class=" col-lg-3 col-md-4  col-sm-6   card  " >
+          <img class="card-img main-image" src="./assest/image/shirts1/shirts5.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/shirts1/shirts5.png" alt="Card image cap">
+         
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title">  Dark Shirt </p>
+            <p class="card-price  ">45$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="5"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="5" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img " src="./assest/image/shirts1/shirts5.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">Dark Shirt</h4>
+                <h5 class="product-price  ">45$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+
+        <div class=" col-lg-3 col-md-4   col-sm-6  card  " >
+          <img class="card-img main-image" src="./assest/image/suits/product8/tinified8/81.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/suits/product8/tinified8/82.png" alt="Card image cap">
+         
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title"> Rose Suit </p>
+            <p class="card-price  ">200$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="6"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="6" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img "src="./assest/image/suits/product8/tinified8/81.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">Rose Suit</h4>
+                <h5 class="product-price  ">200$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+
+        <div class=" col-lg-3 col-md-4  col-sm-6   card  " >
+          <img class="card-img main-image" src="./assest/image/shirts1/shirts7.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/shirts1/shirts7.png" alt="Card image cap">
+         
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title"> Light Blue Shirt </p>
+            <p class="card-price  ">95$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="7"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="7" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img " src="./assest/image/shirts1/shirts7.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">Light Blue Shirt</h4>
+                <h5 class="product-price  ">95$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+
+        <div class=" col-lg-3 col-md-4 col-sm-6    card  " >
+          <img class="card-img main-image" src="./assest/image/suits/product9/tinified9/91.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/suits/product9/tinified9/92.png" alt="Card image cap">
+         
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title">Black Suit </p>
+            <p class="card-price  ">330$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="8"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="8" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img " src="./assest/image/suits/product9/tinified9/91.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">Black Suit</h4>
+                <h5 class="product-price  ">330$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+
+        <div class=" col-lg-3 col-md-4  col-sm-6   card  " >
+          <img class="card-img main-image" src="./assest/image/shoes1/shoes1.png" alt="Card image cap">
+          <img class="card-img second-image" src="./assest/image/shoes1/shoes1.png" alt="Card image cap">
+          <div class="card-body">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="card-title"> Brown Shoes </p>
+            <p class="card-price  ">180$ </p>
+            <p class="descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+            <span class="card-icon ">
+              <ul class="d-flex  justify-content-center">
+                <li><i class=" card-icon-item-list fas fa-shopping-cart add-to-cart"></i> </li>
+                <li class="quick_view_button" id="9"><i class=" card-icon-item-list fa fa-eye "></i> </li>
+               
+                  <li><i class=" card-icon-item-list fa fa-heart wishlist"></i> </li>
+              </ul>
+             
+            </span>
+          </div>
+          <div class="quick-view   text-center" id="9" >
+            <span class="close"><i class="fa fa-window-close"></i></span>
+            <div class="product-img">
+                <img class="product-img " src="./assest/image/shoes1/shoes1.png" alt="">
+            </div>
+            <div class="product-des my-auto">
+              <div class="main-desc py-3">
+                <div class="rateing-star">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <h4 class="product-title">Brown Shoes</h4>
+                <h5 class="product-price  ">180$</h5>
+              </div>
+              <div class="py-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat ut dolores. Nesciunt necessitatibus impedit doloremque magnam nisi eligendi quam aperiam hic facere mollitia corrupti, unde id doloribus quae. Et.</p>
+              </div>
+             
+            
+            <a href="singlepage.html"><button class="btn button ">Read more</button></a>
+            
+            </div>
+            
+          </div> 
+          
+        
+        </div>
+
+  </div>
+ 
+  <nav class="mt-5" aria-label="...">
+    
+    <ul class="pagination  justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item  "><a class="page-link active" href="#">1</a></li>
+      <li class="page-item " aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item " aria-current="page">
+        <a class="page-link" href="#">3</a>
+      </li>
+     
+      
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  
+  </nav>
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- end Products card content -->
+
+<!-- footer -->
+<div class="main-footer ">
+  <div class="main-footer-info ">
+    <div class="container text-md-start  text-center ">
+      <div class="row">
+      <ul class="main-footer-menu col-lg-3 col-sm-6">
+          <h4>Help</h4>
+          <li class="main-footer-menu-item"><a href="#"> Information</a></li>
+          <li class="main-footer-menu-item"><a href="#"> Privacy Policy</a></li>
+          <li class="main-footer-menu-item"><a href="#"> Shipping</a></li>
+          <li class="main-footer-menu-item"><a href="#"> Search</a></li>
+      </ul>
+
+      <ul class="main-footer-menu col-lg-3 col-sm-6">
+        <h4>Support </h4>
+        <li class="main-footer-menu-item"><a href="#"> Contact us</a></li>
+        <li class="main-footer-menu-item"><a href="#"> About us</a></li>
+        <li class="main-footer-menu-item"><a href="#"> Partners</a></li>
+        <li class="main-footer-menu-item"><a href="#"> Refunds & Returns</a></li>
+    </ul>
+
+    <ul class="main-footer-menu col-lg-3 col-sm-6 ">
+      <h4>Address</h4>
+      <li  class="main-footer-menu-item mb-1 text-white">  <i class="fa fa-home"></i> cairo/Egypt</li>
+      <li class="main-footer-menu-item mb-1 text-white"> <i class="fa fa-phone"></i>    +20-1017753291</li>
+      <li class="main-footer-menu-item mb-1 text-white"> <i class="fa fa-envelope"></i>   nasser9959@gmail.com</li>
+  </ul>
+
+  <div class="social-media my-5 col-lg-3 col-sm-6">
+   <a href="#"> <i class="fa fa-facebook"></i></a>
+   <a href="#"> <i class="fa fa-instagram"></i></a>
+   <a href="#"> <i class="fa fa-twitter"></i></a>
+   <a href="#"> <i class="fa fa-envelope"></i></a>
+   <a href="#"> <i class="fa fa-linkedin"></i></a>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+ <!-- end main-footer -->
+ <!--  second-footer -->
+<div class="footer">
+  <H6 class="text-center  p-2"> &copy;  2022 Designed by Nasser Bash</H6>
+</div>
+<!-- end footer -->
+<script src="./assest/js/jquery-3.6.0.min.js"></script>
+  <script src="./assest/js/bootstrap.bundle.min.js"></script>
+  <script src="./assest/js/bootstrap.min.js"></script>
+  <script src="./assest/js/popper.min.js"></script>
+  <script src="./assest/js/script.js"></script>
+  <script src="./assest/js/cart.js"></script>
+  <script src="./assest/js/filters.js"></script>
+  <script src="./assest/js/cartpage.js"></script>
+  
+</body>
+
+
+</html>

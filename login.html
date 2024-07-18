@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assest/css/bootstrap@5.0.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Water+Brush&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./assest/css/style.css">
+  <title>Nasser Store - Cart</title>
+</head>
+
+<body>
+  <div id="page-loader">
+    <div id="loader">
+      <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" />
+      </svg>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand d-none d-md-block ">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand px-4" href="index.html"><img src="./assest/image/logo-dark.png" alt=""></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 m-2 mb-lg-0 p-3   ">
+          <li class="nav-item  ">
+            <a class="nav-link " aria-current="page" href="store.html">Store</a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link " aria-current="page" href="suits.html">Suits</a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link " aria-current="page" href="shirts.html">Shirts</a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link " aria-current="page" href="shoes.html">shoes</a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link " aria-current="page" href="singlepage.html">Product</a>
+          </li>
+          
+         
+         
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 m-2 mb-lg-0 p-3   d-none d-lg-flex ">
+          <li class="nav-item  "id="cart">
+            <a class="nav-link " aria-current="page" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+           
+            <div class="cart-view d-none d-lg-block">
+                
+                <div id="cart-view-content"></div>
+        
+          <!-- <div class="control-btn d-flex p-3">
+            <a href="checkout.html"><button class="btn button  mx-2 Checkout">  Checkout</button></a>
+            <a href="cart.html"><button class="btn button  mx-2 View">  View Cart</button></a>
+          </div> -->
+          </div>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link " aria-current="page" href="wishlist.html"><i class="fa fa-heart"></i></a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link " aria-current="page" href="login.html"><i class="fa fa-user"></i></a>
+          </li>
+          <form class="form-inline mx-1 my-1">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- end main-menu -->
+
+<!--  mobile-menu -->
+
+<nav class="navbar navbar-expand d-block d-md-none mobile-menu">
+  <div class="container ">
+    <button class="mobile-menu-btn-toggle m-1" id="mobile-menu-btn-toggle"><i class="fa fa-bars"></i></button>
+    <a class="navbar-brand px-1 mx-2" href="index.html"><img src="./assest/image/logo-dark.png" alt=""></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  ms-auto my-auto  ">
+        <li class="nav-item  pe-1">
+          <a class=" mx-0 " aria-current="page" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item pe-1 ">
+          <a class=" mx-0 " aria-current="page" href="wishlist.html"><i class="fa fa-heart"></i></a>
+        </li>
+        <li class="nav-item  pe-1">
+          <a class=" " aria-current="page" href="login.html"><i class="fa fa-user"></i></a>
+        </li>
+      </ul> 
+      </nav>
+<!-- end mobile-menu -->
+
+<!--  mobile-sidebar -->
+<div class="moblie-toggle-sidebar  " id="moblie-toggle-sidebar">
+  <div class="container">
+    <a class="navbar-brand px-4 m-2 " href="index.html"><img src="./assest/image/logo-dark.png" alt=""></a>
+    <button class="mobile-menu-btn-close m-1" id="mobile-menu-btn-close"><i class="fa fa-close"></i></button>
+    <form class="form-inline m-3">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <ul class="navbar-nav me-auto mb-2 m-2 mb-lg-0 p-3   ">
+      <li class="nav-item  ">
+        <a class="nav-link " aria-current="page" href="store.html">Store</a>
+      </li>
+      <li class="nav-item  ">
+        <a class="nav-link " aria-current="page" href="suits.html">Suits</a>
+      </li>
+      <li class="nav-item  ">
+        <a class="nav-link " aria-current="page" href="shirts.html">Shirts</a>
+      </li>
+      <li class="nav-item  ">
+        <a class="nav-link " aria-current="page" href="shoes.html">Shoes</a>
+      </li>
+      <li class="nav-item  ">
+        <a class="nav-link " aria-current="page" href="singlepage.html">Product</a>
+      </li>
+      <span class="d-flex ">
+        <li class="nav-item  "id="cart">
+          <a class="nav-link " aria-current="page" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item  mx-1">
+          <a class="nav-link " aria-current="page" href="wishlist.html"><i class="fa fa-heart"></i></a>
+        </li>
+        <li class="nav-item  mx-1">
+          <a class="nav-link " aria-current="page" href="login.html"><i class="fa fa-user"></i></a>
+        </li>
+      </span>
+    </ul>
+  </div>
+</div>
+<div class="page-title ">
+  <h3>Login</h3>
+</div>
+           <!-- contant -->
+           <div class="container my-4">
+            <h2 class="mb-4">Login : </h2>
+            
+                <form action="">
+                  
+
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                        
+                      </div>
+                     
+                      <button class="btn button w-25 mb-3">Login</button>
+                      
+                </form>
+                <span>
+                    <a href="signup.html" class="text-dark">Creat account</a> <br>
+                    <a href="login.html"class="text-danger" >Forget Password?</a>
+                  </span>
+           </div>
+
+           
+           <div class="main-footer ">
+            <div class="main-footer-info ">
+              <div class="container text-md-start  text-center ">
+                <div class="row">
+                <ul class="main-footer-menu col-lg-3 col-sm-6">
+                    <h4>Help</h4>
+                    <li class="main-footer-menu-item"><a href="#"> Information</a></li>
+                    <li class="main-footer-menu-item"><a href="#"> Privacy Policy</a></li>
+                    <li class="main-footer-menu-item"><a href="#"> Shipping</a></li>
+                    <li class="main-footer-menu-item"><a href="#"> Search</a></li>
+                </ul>
+          
+                <ul class="main-footer-menu col-lg-3 col-sm-6">
+                  <h4>Support </h4>
+                  <li class="main-footer-menu-item"><a href="#"> Contact us</a></li>
+                  <li class="main-footer-menu-item"><a href="#"> About us</a></li>
+                  <li class="main-footer-menu-item"><a href="#"> Partners</a></li>
+                  <li class="main-footer-menu-item"><a href="#"> Refunds & Returns</a></li>
+              </ul>
+          
+              <ul class="main-footer-menu col-lg-3 col-sm-6">
+                <h4>Address</h4>
+                <li class="main-footer-menu-item mb-1">  <i class="fa fa-home">   cairo/Egypt</i></li>
+                <li class="main-footer-menu-item mb-1"> <i class="fa fa-phone">    +20-1017753291</i></li>
+                <li class="main-footer-menu-item mb-1"> <i class="fa fa-envelope">  nasser9959@gmail.com</i></li>
+            </ul>
+          
+            <div class="social-media my-5 col-lg-3 col-sm-6">
+             <a href="#"> <i class="fa fa-facebook"></i></a>
+             <a href="#"> <i class="fa fa-instagram"></i></a>
+             <a href="#"> <i class="fa fa-twitter"></i></a>
+             <a href="#"> <i class="fa fa-envelope"></i></a>
+             <a href="#"> <i class="fa fa-linkedin"></i></a>
+            </div>
+            </div>
+          </div>
+          </div>
+          </div>
+       <!-- end main-footer -->
+       <!--  second-footer -->
+      <div class="footer ">
+        <H6 class="text-center  p-2"> &copy;  2022 Designed by Nasser Bash</H6>
+      </div>
+    
+  <script src="./assest/js/bootstrap.bundle.min.js"></script>
+  <script src="./assest/js/bootstrap.min.js"></script>
+  <script src="./assest/js/popper.min.js"></script>
+  <script src="./assest/js/script.js"></script>
+</body>
+
+</html>
